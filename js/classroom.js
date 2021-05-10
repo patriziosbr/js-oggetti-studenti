@@ -59,3 +59,18 @@ for (var i = 0; i < classRoom.length; i++) {
 // Dare la possibilità all'utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell'ordine: nome, cognome e età.
 
 
+var inputName = prompt('inserisci nome utente');
+var inputSurname = prompt('inserisci nome Cognome');
+var inputAge = parseInt(prompt('inserisci età'));
+
+var newStudent = {};
+
+newStudent.nome = inputName;
+newStudent.cognome = inputSurname;
+newStudent.eta = inputAge;
+
+console.log('test new student', newStudent);
+
+classRoom.push(newStudent);
+
+console.log(classRoom);
